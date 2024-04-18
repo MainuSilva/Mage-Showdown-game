@@ -1,0 +1,16 @@
+digraph "Level"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Level",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Struct relativa ao Nível."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" finalPos" ];
+  Node2 [label="FinalPos",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_final_pos.html",tooltip="Struct relativa à Zona Final do Nível."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" manaList" ];
+  Node3 [label="Mana",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_mana.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" monsterList" ];
+  Node4 [label="Monster",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_monster.html",tooltip="Struct relativa aos Monstros."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" power" ];
+  Node5 [label="Power",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_power.html",tooltip="Struct relativo ao Power."];
+}
